@@ -11,7 +11,7 @@ import java.util.Map;
 public class HashMapExample {
     public static void main(String[] args) {
         HashMap<String, Integer> phoneBook =  new HashMap<>();
-        //Now let's add some elements one phoneBook
+        //Now let's add some elements on phoneBook
         phoneBook.put("Abraham", 4504150);
         phoneBook.put("Parker", 4514501);
         phoneBook.put("Daisy", 5674232);
