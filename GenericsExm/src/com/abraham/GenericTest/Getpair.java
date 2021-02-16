@@ -5,6 +5,8 @@ public class Getpair<T, S> {
     private T first;
     private S second;
 
+    public Getpair(){
+    }
     public Getpair(T first, S second) {
         this.first = first;
         this.second = second;

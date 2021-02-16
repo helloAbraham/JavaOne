@@ -11,8 +11,7 @@ public class PairTesting {
 
         Getpair<Integer, String> myPair = new Getpair<>(idNumber, name);
 
-
-                //Let's display the pair of ITEMS
+        //Let's display the pair of ITEMS
         System.out.println("ID Number " + myPair.getFirst());
         System.out.println("Name " + myPair.getSecond());
 
