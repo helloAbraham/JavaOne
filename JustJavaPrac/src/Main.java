@@ -29,7 +29,7 @@ public class Main {
 
         var lname = "Parker";
 
-        var fullname = "You name , %s, $%.2f, ";
+        var fullname = "Your name , %s, $%.2f, ";
 
         System.out.println(name + lname);
 
