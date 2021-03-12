@@ -17,7 +17,8 @@ public class PalindromExample {
         original = keyboard.nextLine();
         int inputLength = original.length();
 
-        for(int i =inputLength-1; i>=0; i--)
+        for(int i =inputLength-1; i>=0; i--)             //Note here we do not put "{" becuase we do not show the answer loop through
+                                                        //Otherwise it will check every iteration then finally will say yes. 
             reverse = reverse + original.charAt(i);
                 if(original.equals(reverse)) {
                     System.out.println("Input is a Palindrome");
