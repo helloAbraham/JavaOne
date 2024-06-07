@@ -9,7 +9,6 @@ public class ExampleOfBoxing {
 
         System.out.println(a2 + " " + a3);
 
-
         //Also example
         Integer i=new Integer(50);
         int number = i;

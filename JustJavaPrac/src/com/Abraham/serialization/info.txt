@@ -1,0 +1,13 @@
+Serialization in Java refers to the process of converting an object into a format that can be easily stored, transmitted, or reconstructed later. The serialized form of an object is typically a sequence of bytes that represents the object's state and data. Serialization is commonly used for:
+
+    Persistence: Saving the state of an object to a file or a database for later retrieval.
+    Communication: Transmitting objects over a network or between different processes.
+    Caching: Storing objects in memory or on disk for performance optimization.
+
+    In Java, serialization is achieved using the java.io.Serializable interface.
+    Classes that implement this interface can be serialized, meaning their instances can be converted
+    into a byte stream and then reconstructed later. The serialization process is handled by the Java runtime,
+    and it includes converting the object's state (i.e., its fields) into a byte stream
+    and writing it to an output stream.
+
+    Here's an example of a class implementing Serializable:

@@ -1,5 +1,5 @@
 package com.abraham;
-
+//This is the super class, here is the example of DoctorPCP
 public class DoctorPCP {
 
     void patientGenTreat(){
@@ -10,8 +10,8 @@ public class DoctorPCP {
     private int endTime;
 
     public DoctorPCP(){
-
     }
+
     public DoctorPCP(int startTime, int endTime) {
         this.startTime = startTime;
         this.endTime = endTime;

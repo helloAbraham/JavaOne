@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Max element in the array is " + Arrays.stream(myArray).max());
         System.out.println("Smallest element in the array is " + Arrays.stream(myArray).min());
 
-        //Using method
+        //Using your own method
         System.out.println("The Largest Element in the myArray is " + findLarge.findLargest(myArray,6) );
         System.out.println("The Largest Element in the myArrayOne is "+ findLarge.findLargest(myArrayOne, 7));
     }

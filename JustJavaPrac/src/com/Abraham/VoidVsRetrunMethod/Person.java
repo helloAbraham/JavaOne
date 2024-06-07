@@ -37,13 +37,13 @@ public class Person {
     }
 
     //Example of returning method
-    public String toString()
-    {
+     public String toString()
+     {
         return "Person: " + firstName + ", " + lastName + ", and Age " + age;
     }
 
     //Example of void method
-    public void printPerson()
+    public void printPersonInfo()
     {
         System.out.println(this.toString());
     }

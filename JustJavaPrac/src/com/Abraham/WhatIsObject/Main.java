@@ -8,5 +8,7 @@ public class Main{
         Queens myQ = new Queens();
         myQ.helloMessage();
 
+        LovedOne son = new LovedOne();
+        son.msgLike("Aiden");
     }
 }

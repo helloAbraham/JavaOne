@@ -1,7 +1,7 @@
 package com.Abraham.Array.ArrayListSimpleExample;
 /**
     This simple program will not only print the array of string element
-    also each elements length (how many character). For examole Abraham it will say Abraham 7
+    also each element length (how many character). For examole Abraham it will say Abraham 7
     This program here we use lambda expression to figure it out the each elements length.
  */
 

@@ -11,10 +11,10 @@ public class PersonContact {
         this.name = name;
         this.age = age;
         this.phoneNumber = phoneNumber;
-        System.out.println("Person Contact Created Name: " + name + " age: " + age + " Phone: " + phoneNumber);
+        System.out.println("Person Contact Created" + "\nName: " + name + "\n age: " + age + "\nPhone: " + phoneNumber);
     }
 
-    //If we do each input getter and setter then it would be different way input
+    //If we do each input getter and setter then it may be difference way input
 
     /**
      public class PersonContact {
