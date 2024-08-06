@@ -15,6 +15,7 @@ public class GenricsType <T>{
     public static void main(String[] args) {
         GenricsType <String> genExample = new GenricsType<>();
             genExample.setTextt("Abraham");  //This will be valid
+           // genExample.setTextt(123); // Not Valid
 
         GenricsType nextTypeExample = new GenricsType();
             nextTypeExample.setTextt("Parker"); // This is valid

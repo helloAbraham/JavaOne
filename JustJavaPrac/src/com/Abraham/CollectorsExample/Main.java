@@ -1,5 +1,6 @@
 package com.Abraham.CollectorsExample;
 
+import java.sql.Timestamp;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -25,6 +26,8 @@ public class Main {
          and collects the results using various Collectors.
          */
 
+        Timestamp currentTime = null;
+        System.out.println(currentTime);
         //Collect to list only Name
         List<String> namesList = myPeople.stream()
                 .map(Person::getName)

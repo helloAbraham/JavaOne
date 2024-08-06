@@ -1,0 +1,79 @@
+This is the example for two object compare. Suppose both object contains age integer and you want to compare two values:
+
+This method appears to be intended to generate a `Comparator` for objects of a generic type `I`, based on an integer value extracted from those objects using a provided `Function<I, Integer>`. However, there are a few typographical errors in the code snippet you provided. Here is the corrected version of the method:
+
+```java
+public static <I> Comparator<I> unwrapCompareInt(Function<I, Integer> accessor) {
+    return (x, y) -> Integer.compare(accessor.apply(x), accessor.apply(y));
+}
+```
+
+### Details About the Method
+
+1. **Generics**:
+   - `<I>`: This defines a generic type parameter `I` for the method. This allows the method to be used with any type `I`.
+
+2. **Method Signature**:
+   - `public static <I> Comparator<I> unwrapCompareInt(Function<I, Integer> accessor)`: This means the method is public, static, returns a `Comparator<I>`, and takes a `Function<I, Integer>` as its parameter.
+
+3. **Parameter**:
+   - `Function<I, Integer> accessor`: This is a functional interface that takes an object of type `I` and returns an `Integer`. It is used to extract the integer value from objects of type `I`.
+
+4. **Return Type**:
+   - `Comparator<I>`: The method returns a `Comparator` for objects of type `I`.
+
+5. **Lambda Expression**:
+   - `(x, y) -> Integer.compare(accessor.apply(x), accessor.apply(y))`: This is a lambda expression that implements the `Comparator<I>` interface. It compares two objects `x` and `y` of type `I` by applying the `accessor` function to each to get their integer values and then comparing those integers using `Integer.compare`.
+
+### Example Usage
+
+Suppose you have a class `Person` with an `age` field, and you want to create a comparator to compare `Person` objects based on their age. You could use the `unwrapCompareInt` method as follows:
+
+```java
+import java.util.Comparator;
+import java.util.function.Function;
+
+class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Function<Person, Integer> ageAccessor = Person::getAge;
+        Comparator<Person> ageComparator = unwrapCompareInt(ageAccessor);
+
+        Person person1 = new Person("Alice", 30);
+        Person person2 = new Person("Bob", 25);
+
+        int comparisonResult = ageComparator.compare(person1, person2);
+
+        if (comparisonResult > 0) {
+            System.out.println(person1.getName() + " is older than " + person2.getName());
+        } else if (comparisonResult < 0) {
+            System.out.println(person1.getName() + " is younger than " + person2.getName());
+        } else {
+            System.out.println(person1.getName() + " and " + person2.getName() + " are the same age");
+        }
+    }
+
+    public static <I> Comparator<I> unwrapCompareInt(Function<I, Integer> accessor) {
+        return (x, y) -> Integer.compare(accessor.apply(x), accessor.apply(y));
+    }
+}
+```
+
+In this example, the `ageComparator` is used to compare two `Person` objects based on their ages, and the comparison result is printed accordingly.
