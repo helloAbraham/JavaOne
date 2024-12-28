@@ -5,7 +5,10 @@ import java.util.function.Function;
 
 public class Main {
     public static void main(String[] args) {
+        //below two lines example of generic
+        //We want to take only age from the Person object and Integer type
         Function<Person, Integer> ageAccessor = Person::getAge;
+        //then we like to use this ageAccessor on the method and create another Comparator Object agrComparator
         Comparator<Person> ageComparator = unwrapCompareInt(ageAccessor);
 
         Person person1 = new Person("Abraham", 41);

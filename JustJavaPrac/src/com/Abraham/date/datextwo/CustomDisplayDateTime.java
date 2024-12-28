@@ -14,5 +14,12 @@ public class CustomDisplayDateTime {
         SimpleDateFormat sft = new SimpleDateFormat("E MM.dd.yyyy 'at' hh:mm:ss a zzz");
 
         System.out.println("Current Date: " + sft.format(cusDate));
+
+        System.out.println("---- *** ----");
+        //We can make different patter like / /
+        SimpleDateFormat sftd = new SimpleDateFormat("E MM/dd/yyyy 'at' hh:mm:ss a zzz");
+
+        System.out.println("Current Date: " + sftd.format(cusDate));
+
     }
 }
