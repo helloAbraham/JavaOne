@@ -23,7 +23,7 @@ public class HashMapPrinting {
             //Before we use String or Integer, Double  just what type it is
             //The simple answer is- Map we create an object myMap
             //It is generic Object class, you can manipulate
-            //Also using Object we can play lots of other works
+            //Also using Object we can play lots of other functionalities
 
             System.out.println("---------------------");
             //Using Enhance for loop, Just Value
@@ -60,6 +60,8 @@ public class HashMapPrinting {
             System.out.println("Please Enter your name: ");
             String getName = keyboard.nextLine();
 
+            //you have to type first your name
+            //next line type your age in number
             //int age = keyboard.nextInt();
 
             try {

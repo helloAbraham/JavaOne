@@ -10,12 +10,18 @@ package com.Abraham.ternary;
 //Here's a simple example to illustrate its usage:
 public class TernaryExample {
     public static void main(String[] args) {
-        int number = 10;
+        int number = 15;
         String result;
 
         //Using ternary operator to assign value based on condition
         result = (number % 2 == 0) ? "even" : "odd";
         System.out.println("The number is " + result);
+
+        //Just for one line space
+        System.out.println("-----------------------------------");
+        //If we want we can make shorter, we do not need to create a variable to hold the value
+        //unless requirement to other condition.
+        System.out.println( number % 2 == 0 ? " The number is Even" : " The number is Odd");
     }
 }
 
